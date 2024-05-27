@@ -1,0 +1,93 @@
+<!-- Name: Taya Ambrose -->
+<!-- Email: tjambros@ucsc.edu -->
+<!-- CSE 160, Assignment 4 -->
+
+<!-- From following Professor Davis' videos -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Soot's World</title>
+  </head>
+
+  <body onload="main()">
+        <div class="containerTwo">
+      <h1>Explore Soot's World</h1>
+    </div>
+
+    <div class="container">
+      <canvas id="webgl" width="1200" height="700">
+      Please use a browser that supports "canvas"
+      </canvas>
+
+      <div class="slider-container">
+        <div class="container">
+          <p id="numdot" style="font-size:13px; ">&nbsp;</p>
+        </div>
+
+        <button type="button" class="rounded-button" id="normalOn">Normals On</button>
+        <button type="button" class="rounded-button" id="normalOff">Normals Off</button>
+        <br>
+
+        <button type="button" class="rounded-button" id="lightOn">Light On</button>
+        <button type="button" class="rounded-button" id="lightOff">Light Off</button>
+        <br>
+
+        Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+        Light Y <input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+        Light Z <input type="range" min="-250" max="250" value="-200" class="slider" id="lightSlideZ">
+
+        <h1>Move Soot</h1>
+        Use up and down arrows to move forwards and backwards<br>
+        Use left key to turn left<br>
+        Use right key to turn right<br>
+
+        <h1>Move Camera</h1>
+        Use w, a, s, and d to move<br>
+        Use space key to go up and shift to go down<br>
+        Use q and e to rotate left and right<br>
+        Use m to switch to and from mouse control<br>
+        
+        <h1>Edit World</h1>
+        Use f to set place block mode<br>
+        Use v to set delete block mode<br>
+        Use t to escape edit mode<br>
+        Use button for stone<br>
+
+        Click to place and destroy blocks that are highlighted brown
+      </div>
+
+    </div>
+
+    <div class="container">
+    <p>
+
+    <br>
+    Block Type:
+    <button type="button" class="rounded-button" id="stoneButton">Stone</button>
+    Might add more blocks later.
+    </p>
+    </div>
+    
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Points.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="RenderObj.js"></script>
+    <script src="sootBaby.js"></script>
+    <script src="RenderMap.js"></script>
+    <script src="Animation.js"></script>
+    <script src="Textures.js"></script>
+    <script src="SetupHTML.js"></script>
+    <script src="SetupWebGL.js"></script>
+    <script src="Camera.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
